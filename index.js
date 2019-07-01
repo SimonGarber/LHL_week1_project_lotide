@@ -1,3 +1,4 @@
+// Utility function available across the entire program
 const head = require('./head');
 const tail = require('./tail');
 const middle = require('./middle');
@@ -7,29 +8,31 @@ const findKey = require('./findKey');
 const eqObjects = require('./eqObjects');
 const eqArrays = require('./eqArrays');
 const countOnly = require('./countOnly');
-const countletters = require('./countletters');
-const countindex = require('./countindex');
+const countletters = require('./letterPositions');
+const letterPositions = require('./letterPositions');
 const assertObjectsEqual = require('./assertObjectsEqual');
 const assertEqual = require('./assertEqual');
 const assertArraysEqual = require('./assertArraysEqual');
 const without = require('./without');
 const takeUntil = require('./takeUntil');
-module.exports = {
-  head:  head,
-  tail:  tail,
-  middle: middle,
-  flatten: flatten,
-  findKeyByValue: findKeyByValue,
-  findKey : findKey,
-  eqObjects: eqObjects,
-  eqArrays : eqArrays,
-  countOnly : countOnly,
-  countletters : countletters,
-  countindex : countindex,
-  assertObjectsEqual : assertObjectsEqual,
-  assertEqual : assertEqual,
-  assertArraysEqual : assertArraysEqual,
-  without : without,
-  takeUntil : takeUntil,
+const map = require('./map');
 
+module.exports = {
+    head,
+    tail,
+   middle,
+   flatten,
+   findKeyByValue,
+   findKey,
+   eqObjects,
+   eqArrays,
+   countOnly,
+   countletters,
+   countindex,
+   assertObjectsEqual,
+   assertEqual,
+   assertArraysEqual,
+   without,
+   takeUntil,
+   map
 };
