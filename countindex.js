@@ -24,8 +24,8 @@ const assertArraysEqual = function(arr1,arr2){
 function countIndex (phrase) {
     const results = {}; 
     const letters = phrase.split('');
-    for (var index = 0; index < letters.length; index ++) {
-        var character = letters[index];
+    for (const index = 0; index < letters.length; index ++) {
+        const character = letters[index];
         if (!results[character]) {
             results[character] = [index];
         } else {

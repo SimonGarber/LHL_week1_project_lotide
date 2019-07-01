@@ -10,13 +10,15 @@ const eqArrays = function(arr1,arr2) {
     return true;
   };
 
-  const assertArraysEqual = function(eqArrays){
-      if (!eqArrays){
-          console.log("Uh Oh! These arrays are NOT equal")
+  const assertArraysEqual = function(arr1,arr2){
+    const result = eqArrays(arr1,arr2)
+      if (!result){
+          console.log(`❌ ❌ ❌: Uh Oh! These arrays are NOT equal`)
       }
       else {
-          console.log("Congratulations! These arrays ARE equal")
+          console.log(`✅ ✅ ✅ : Congratulations! These arrays ARE equal`)
       }
   }
-  assertArraysEqual(eqArrays([1,2,3],[3,2,1]))
+  assertArraysEqual([1,2,3],[4,2,3])
+  
 
