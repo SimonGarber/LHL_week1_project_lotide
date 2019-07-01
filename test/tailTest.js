@@ -1,3 +1,4 @@
+
 const assertEqual = require('../assertEqual')
 const tail = require('../tail')
-assertEqual(tail([1,2,3]),[2,3]);
+assertEqual(tail([1,2,3]).length,2);
