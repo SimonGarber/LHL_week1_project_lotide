@@ -21,6 +21,8 @@ const findKeyByValue = function(obj,objVal){
     }
     return undefined;
 };
- console.log(assertEqual(findKeyByValue(bestBooksByGenre,"Outliers"),true));
- console.log(assertEqual(findKeyByValue(bestBooksByGenre,"A Brave Old World"),undefined));
- console.log(assertEqual(findKeyByValue(bestBooksByGenre,"Steve Jobs"),"Biography"))
+
+module.exports = findKeyByValue;
+//  console.log(assertEqual(findKeyByValue(bestBooksByGenre,"Outliers"),true));
+//  console.log(assertEqual(findKeyByValue(bestBooksByGenre,"A Brave Old World"),undefined));
+//  console.log(assertEqual(findKeyByValue(bestBooksByGenre,"Steve Jobs"),"Biography"))

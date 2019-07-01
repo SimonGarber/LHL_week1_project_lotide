@@ -33,20 +33,21 @@ const without = function(source,itemsToRemove){
   }
   return newArr;
 } 
-let source = [1,2,3,4,5,6,7,8];
-let itemsToRemove = [8];
-console.log(without(source,itemsToRemove));
+modules.export = without;
+// let source = [1,2,3,4,5,6,7,8];
+// let itemsToRemove = [8];
+// console.log(without(source,itemsToRemove));
 
 
 
 
 // Test cases to ensure proper functioning of the code
-const words = ["hello","world","lighthouse"];
-without(["hello", "world", "lighthouse"], ["lighthouse"]);
-assertArraysEqual(words,["hello", "world", "lighthouse"]);
-// ******************************************************
-console.log(without([1,2,3],[1])) // => [2,3] 
-console.log(without(["1","2","3"],[1,2,"3"])) // => ["1","2"]
+// const words = ["hello","world","lighthouse"];
+// without(["hello", "world", "lighthouse"], ["lighthouse"]);
+// assertArraysEqual(words,["hello", "world", "lighthouse"]);
+// // ******************************************************
+// console.log(without([1,2,3],[1])) // => [2,3] 
+// console.log(without(["1","2","3"],[1,2,"3"])) // => ["1","2"]
 
  
 

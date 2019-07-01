@@ -34,4 +34,5 @@ function countIndex (phrase) {
     }
     return results;   
 }
-console.log(assertArraysEqual(countIndex("lighthouse in the house").i,[1,11]));  
+module.exports = countindex;
+// console.log(assertArraysEqual(countIndex("lighthouse in the house").i,[1,11]));  

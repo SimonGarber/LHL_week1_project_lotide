@@ -24,5 +24,7 @@ const assertEqual = function(actual, expected) {
     return charsObj.h;
     
 }
-console.log(assertEqual(countLetters("lighthouse in the house"),4));
+
+module.exports = countletters;
+// console.log(assertEqual(countLetters("lighthouse in the house"),4));
 

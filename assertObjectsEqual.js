@@ -23,6 +23,7 @@ const eqObjects = function(object1, object2){
     console.log(`Assertion Passed:  ${inspect(ab)} === ${inspect(ba)}`); 
 }
   }
-  const ab = { a: "4", b: "2"};
-  const ba = { b: "2", a: "1"};
-  console.log(assertObjectsEqual(eqObjects(ab,ba),false));
+  module.exports = assertObjectsEqual;
+//   const ab = { a: "4", b: "2"};
+//   const ba = { b: "2", a: "1"};
+//   console.log(assertObjectsEqual(eqObjects(ab,ba),false));
